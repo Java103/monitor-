@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+#background {
+    width: 2030px;
+    height: 1080px;
+    background-color: black;
+    position:fixed
+    
+}
+
+#interior {
+    width: 1215px;
+    height:1080px;
+    background-image: url(images/pic.jpg);
+    position:fixed
+}
+
+#monitor{
+    width: 293px;
+    height: 133px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 726px;
+    margin-top: 450px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(95, 7, 6); 
+    font-size: 22px; 
+
+    
+}
+
+#inputs{
+width: 810px;
+height: 1080px;
+background-color: rgb(1, 1, 40);
+margin-left: 1215px;
+position: fixed;
+}
+
+.input{
+    width: 520px;
+    height: 100px;
+    background-color: rgb(18, 7, 62);
+    margin-top: 33px;
+    margin-left: 10px;
+
+
+    font-family: 'Arial', sans-serif; 
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff; 
+}
+
+
+
+
+#buttons {
+    width: 293px;
+    height: 37px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    margin-top: 97px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/*აქ გავსტილე მთავარი გვერდის ღილაკები*/
+#buttons button {
+    width: 70px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(210, 44, 44);
+    border: 2px solid rgb(95, 7, 6); 
+    cursor: pointer;
+    outline: none; 
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+
+
+/*მეორე გვერდი ლეველ ღილაკის დაჭერისას*/
+
+#monitor.second-page {
+    flex-direction: column;
+}
+
+#monitor.second-page #buttons {
+    margin-top: 0;
+    
+}
+
+#monitor.second-page #levelButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: auto;
+    
+}
+
+
+#oilButton,
+#waterButton,
+#batteryButton {
+    cursor: pointer;
+    
+}
+
+
+/* ლეველის ბექ ღილაკი */
+
+#backLevelsButton{
+
+    margin: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 159%);
+    
+}
+
+
+
+
+
+/* მუს პლეიერის სტილები*/
+#audioPlayer {
+    margin-top: -20px;
+    text-align: center;
+    width: 280px;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#audioPlayer audio {
+    width: 100%;
+}
+
+
+
+/* ფოტო ფლეიერის სტილები */
+.photo-thumbnail {
+    max-width: 100%; 
+    max-height: 100%; 
+    width: auto; 
+    height: auto; 
+}
+
+.photo-container {
+    position: relative;
+    margin-top: 4px;
+}
+ 
+
+
+/*Next და Previous ღილაკების სტილები */
+.photo-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.next-button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.prev-button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.back-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
